@@ -57,3 +57,5 @@ Using the functions implemented in the file `code.R`.
 ### 2.2	Un gráfico de barras
 
 ### 2.3 Pie Chart
+
+Probando

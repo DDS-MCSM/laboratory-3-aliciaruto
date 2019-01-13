@@ -55,13 +55,14 @@ Construid un data frame con el texto de los enlaces, y la url destino.
 
 > En HTML, los enlaces a otras paginas webestan contenidos en tags `<a ...> ... </a>`, los cuales tienen el atributo “href” para indicar la URL del enlace. P.e. “<a href = ‘enlace’>Texto del Enlace</a>”.
 
-
 ## 1.4 Exploración de enlaces
 
 Para cada enlace, seguirlo e indicar si está activo (podemos usar el código de status HTTP al hacer una petición a esa URL).
 Construid un data frame con al menos dos columnas, una con el enlace y otra con el código de retorno devuelto en la respuesta a la petición.
 
 Usar la función HEAD de la librería “httr”, que en vez de descargarse la página como haría GET, solo consultamos los atributos de la página o fichero destino.
+
+
 
 Identificar el `status_code` en el resultado de la función `HEAD()`:
 
@@ -74,6 +75,8 @@ Identificar el `status_code` en el resultado de la función `HEAD()`:
 
 
 > Usad un tiempo de espera entre petición y petición de pocos segundos `Sys.sleep()`.
+
+
 
 &nbsp;
 
@@ -102,5 +105,3 @@ Indicando la suma de enlaces que apuntan a otros dominios o servicios (distinto 
 Crear un gráfico de tipo _pastel_ indicando los porcentajes de Response Code de nuestro análisis.
 
 > _Por ejemplo, si hay 6 enlaces con un código de retorno “200” y 4 enlaces con “404”, el gráfico mostrará un 60% con la etiqueta “200” y un 40% con la etiqueta “404”._
-
-
